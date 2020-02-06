@@ -45,3 +45,5 @@
 {/each}
 
 <p>This rocks.</p>
+
+<a href="https://github.com/kaicarver/sovelte">Source</a>
