@@ -7,8 +7,8 @@
 </script>
 
 <p>
-	<span style="background-color: {initial}">initial</span>
-	<span style="background-color: {current}">current</span>
+	<span style="background-color: {initial.color}">{initial.char} initial</span>
+	<span style="background-color: {current.color}">{initial.char} current</span>
 </p>
 
 <style>

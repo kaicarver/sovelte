@@ -10,11 +10,11 @@
   }
 
 	let things = [
-		{ id: 1, color: '#0d0887' },
-		{ id: 2, color: '#6a00a8' },
-		{ id: 3, color: '#b12a90' },
-		{ id: 4, color: '#e16462' },
-		{ id: 5, color: '#fca636' }
+		{ id: 1, char: '氫', color: '#0d0887' },
+		{ id: 2, char: '氦', color: '#6a00a8' },
+		{ id: 3, char: '鋰', color: '#b12a90' },
+		{ id: 4, char: '鈹', color: '#e16462' },
+		{ id: 5, char: '硼', color: '#fca636' }
 	];
 
 	function handleClick2() {
@@ -28,7 +28,7 @@
   }
 </style>
 
-<h1>Hey {name}!</h1>
+<h1>Hey {name}!!!</h1>
 
 <button on:click={handleClick}>
   Clicked {count} {count === 1 ? 'time' : 'times'}
@@ -40,8 +40,8 @@
 	Remove first thing
 </button>
 
-{#each things as thing}
-	<Thing current={thing.color}/>
+{#each things as thing (thing.id)}
+	<Thing current={thing}/>
 {/each}
 
 <p>This rocks.</p>
