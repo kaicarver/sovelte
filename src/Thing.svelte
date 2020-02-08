@@ -2,6 +2,7 @@
 	export let color;
 	export let char;
 	export let id;
+	let hovering;
 
 	function enter() {
 		hovering = true;
