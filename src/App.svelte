@@ -40,11 +40,11 @@
 
 <button on:click={handleClick2}>Remove first thing</button>
 
-<h1>{current}</h1>
-
 {#each things as thing (thing.id)}
   <Thing bind:value={current} {...thing}/>
 {/each}
+
+<h1>{current}</h1>
 
 <p>This rocks.</p>
 
