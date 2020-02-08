@@ -2,6 +2,7 @@
 	export let color;
 	export let char;
 	export let id;
+	export let status;
 	let hovering;
 
 	function enter() {
@@ -16,7 +17,7 @@
 </script>
 
 <p on:mouseenter={enter} on:mouseleave={leave}>
-	<span style="background-color: {color}">{char} {id}</span>
+	<span style="background-color: {color}">{char} {id} {status.char}</span>
 </p>
 
 <style>
