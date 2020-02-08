@@ -9,10 +9,6 @@
     count += 1;
   }
 
-  let status = {
-    char: "鈹",
-    number: 42,
-  }
   let things = [
     { id: 1, char: "氫", color: "#0d0887" },
     { id: 2, char: "氦", color: "#6a00a8" },
@@ -24,6 +20,8 @@
   function handleClick2() {
     things = things.slice(1);
   }
+  let current;
+  $: view = current ? current : 'current is not set';
 </script>
 
 <style>
@@ -42,8 +40,10 @@
 
 <button on:click={handleClick2}>Remove first thing</button>
 
+<h1>{current}</h1>
+
 {#each things as thing (thing.id)}
-  <Thing {...thing} {status}/>
+  <Thing bind:value={current} {...thing}/>
 {/each}
 
 <p>This rocks.</p>

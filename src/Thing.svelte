@@ -2,22 +2,22 @@
 	export let color;
 	export let char;
 	export let id;
-	export let status;
+	export let value = '';
 	let hovering;
 
 	function enter() {
 		hovering = true;
-		console.log("enter", this)
+		value = char;
 	}
 
 	function leave() {
-		console.log("leave", this)
 		hovering = false;
+		value = 'x';
 	}
 </script>
 
 <p on:mouseenter={enter} on:mouseleave={leave}>
-	<span style="background-color: {color}">{char} {id} {status.char}</span>
+	<span style="background-color: {color}">{char} {id}</span>
 </p>
 
 <style>
