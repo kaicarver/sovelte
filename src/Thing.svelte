@@ -1,14 +1,21 @@
 <script>
-	// `current` is updated whenever the prop value changes...
-	export let current;
+	export let color;
+	export let char;
+	export let id;
 
-	// ...but `initial` is fixed upon initialisation
-	const initial = current;
+	function enter() {
+		hovering = true;
+		console.log("enter", this)
+	}
+
+	function leave() {
+		console.log("leave", this)
+		hovering = false;
+	}
 </script>
 
-<p>
-	<span style="background-color: {initial.color}">{initial.char} initial</span>
-	<span style="background-color: {current.color}">{initial.char} current</span>
+<p on:mouseenter={enter} on:mouseleave={leave}>
+	<span style="background-color: {color}">{char} {id}</span>
 </p>
 
 <style>
