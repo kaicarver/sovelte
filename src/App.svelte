@@ -9,13 +9,17 @@
     count += 1;
   }
 
+  let colors = [ "#0d0887", "#6a00a8", "#b12a90", "#e16462", "#fca636" ];
+
   let things = [
-    { id: 1, char: "氫", color: "#0d0887" },
-    { id: 2, char: "氦", color: "#6a00a8" },
-    { id: 3, char: "鋰", color: "#b12a90" },
-    { id: 4, char: "鈹", color: "#e16462" },
-    { id: 5, char: "硼", color: "#fca636" }
+    { char: "氫", },
+    { char: "氦", },
+    { char: "鋰", },
+    { char: "鈹", },
+    { char: "硼", },
+    { char: "碳", },
   ];
+  things.forEach((t, i) => { t.color = colors[i%colors.length]; t.id = i+1; })
 
   function handleClick2() {
     things = things.slice(1);
