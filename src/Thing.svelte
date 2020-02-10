@@ -13,7 +13,7 @@
 
 	function leave() {
 		hovering = false;
-		value = 'x';
+		value = '　';
 	}
 </script>
 

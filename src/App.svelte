@@ -139,7 +139,7 @@
   function handleClick2() {
     things = things.slice(1);
   }
-  let current;
+  let current = '　';
   $: view = current ? current : "current is not set";
 </script>
 
