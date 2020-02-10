@@ -169,4 +169,6 @@
 
 <p>This rocks.</p>
 
-<a href="https://github.com/kaicarver/sovelte">Source</a>
+<a href="https://github.com/kaicarver/sovelte">Source on Github</a> /
+<a href="https://zh.wikipedia.org/wiki/%E5%85%83%E7%B4%A0%E5%91%A8%E6%9C%9F%E8%A1%A8#%E5%85%83%E7%B4%A0%E9%80%B1%E6%9C%9F%E8%A1%A8">Periodic Table in Chinese on Wikipedia</a>
+
