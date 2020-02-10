@@ -1,13 +1,14 @@
 <script>
 	export let color;
 	export let char;
+	export let simp;
 	export let id;
 	export let value = '';
 	let hovering;
 
 	function enter() {
 		hovering = true;
-		value = char;
+		value = char === simp ? char : char + ' ' + simp;
 	}
 
 	function leave() {
