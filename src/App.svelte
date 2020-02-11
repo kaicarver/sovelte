@@ -9,6 +9,10 @@
     count += 1;
   }
 
+  // try to import JSON as-is...
+  import * as obj from './test.json';
+  console.log("obj:", obj);
+
   let colors = ["#0d0887", "#6a00a8", "#b12a90", "#e16462", "#fca636"];
 
   let things = [
