@@ -1,0 +1,3 @@
+[submodule "src/Periodic-Table-JSON"]
+	path = src/Periodic-Table-JSON
+	url = https://github.com/Bowserinator/Periodic-Table-JSON

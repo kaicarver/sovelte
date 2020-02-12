@@ -12,7 +12,9 @@
   // try to import JSON as-is...
   import * as obj from './test.json';
   console.log("obj:", obj);
-
+  import * as obj2 from './Periodic-Table-JSON/PeriodicTableJSON.json';
+  console.log("obj2:", obj2);
+  
   let colors = ["#0d0887", "#6a00a8", "#b12a90", "#e16462", "#fca636"];
 
   let things = obj.default;
