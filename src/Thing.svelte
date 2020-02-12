@@ -18,7 +18,7 @@
 </script>
 
 <span on:mouseenter={enter} on:mouseleave={leave} on:click={enter}>
-	<span style="background-color: {color}">{char}</span>
+	<span style="background-color: {color}">{id}<br>{char}</span>
 </span>
 
 <style>
