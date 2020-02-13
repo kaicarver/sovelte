@@ -10,8 +10,11 @@
   }
 
   // try to import JSON as-is...
-  import * as obj from './test.json';
+  import * as obj from "./test.json";
   console.log("obj:", obj);
+
+  import * as obj2 from "./PeriodicTableJSON.json";
+  console.log("elements:", obj2.elements);
 
   let colors = ["#0d0887", "#6a00a8", "#b12a90", "#e16462", "#fca636"];
 
@@ -24,7 +27,7 @@
   function handleClick2() {
     things = things.slice(1);
   }
-  let current = '　';
+  let current = "　";
   $: view = current ? current : "current is not set";
 </script>
 
@@ -54,7 +57,14 @@
 
 <p>This rocks.</p>
 
-<a href="https://github.com/kaicarver/sovelte">Source on Github</a> /
-<a href="https://zh.wikipedia.org/wiki/%E5%85%83%E7%B4%A0%E5%91%A8%E6%9C%9F%E8%A1%A8#%E5%85%83%E7%B4%A0%E9%80%B1%E6%9C%9F%E8%A1%A8">Periodic Table in Chinese on Wikipedia</a> /
-<a href="https://github.com/Bowserinator/Periodic-Table-JSON#periodic-table-json">Periodic Table JSON by Bowserinator</a>
-
+<a href="https://github.com/kaicarver/sovelte">Source on Github</a>
+/
+<a
+  href="https://zh.wikipedia.org/wiki/%E5%85%83%E7%B4%A0%E5%91%A8%E6%9C%9F%E8%A1%A8#%E5%85%83%E7%B4%A0%E9%80%B1%E6%9C%9F%E8%A1%A8">
+  Periodic Table in Chinese on Wikipedia
+</a>
+/
+<a
+  href="https://github.com/Bowserinator/Periodic-Table-JSON#periodic-table-json">
+  Periodic Table JSON by Bowserinator
+</a>
