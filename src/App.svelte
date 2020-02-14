@@ -2,12 +2,6 @@
   import Thing from "./Thing.svelte";
 
   export let name;
-  let count = 0;
-  $: doubled = count * 2;
-
-  function handleClick() {
-    count += 1;
-  }
 
   // try to import JSON as-is...
   import * as obj from "./test.json";
@@ -29,7 +23,6 @@
     things = things.slice(1);
   }
   let current = "　";
-  $: view = current ? current : "current is not set";
 </script>
 
 <style>
@@ -38,13 +31,7 @@
   }
 </style>
 
-<h1>Hey {name}!?!</h1>
-
-<button on:click={handleClick}>
-  Clicked {count} {count === 1 ? 'time' : 'times'}
-</button>
-
-<p>{count} doubled is {doubled}</p>
+<h1>Hey {name}!</h1>
 
 <button on:click={handleClick2}>Remove first thing</button>
 
