@@ -56,3 +56,9 @@
   href="https://github.com/Bowserinator/Periodic-Table-JSON#periodic-table-json">
   Periodic Table JSON by Bowserinator
 </a>
+/
+<a
+  href="https://github.com/nieldlr/hanzi">
+  HanziJS Chinese character module by Niel de la Rouviere (not used yet)
+</a>
+
