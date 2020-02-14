@@ -14,7 +14,8 @@
   console.log("obj:", obj);
 
   import * as obj2 from "./PeriodicTableJSON.json";
-  console.log("elements:", obj2.elements);
+  let elements = obj2.elements;
+  console.log("elements:", elements);
 
   let colors = ["#0d0887", "#6a00a8", "#b12a90", "#e16462", "#fca636"];
 
@@ -49,7 +50,7 @@
 
 <p>
   {#each things as thing (thing.id)}
-    <Thing bind:value={current} {...thing} />
+    <Thing bind:value={current} {...thing} element={elements[thing.id - 1]}/>
   {/each}
 </p>
 

@@ -4,6 +4,7 @@
 	export let simp;
 	export let id;
 	export let value = '';
+	export let element;
 	let hovering;
 
 	function enter() {
@@ -18,7 +19,7 @@
 </script>
 
 <span on:mouseenter={enter} on:mouseleave={leave} on:click={enter}>
-	<span style="background-color: {color}">{id}<br>{char}</span>
+	<span style="background-color: {color}">{id}<br>{char}<br>{element.symbol}</span>
 </span>
 
 <style>
