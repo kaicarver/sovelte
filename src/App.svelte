@@ -22,7 +22,7 @@
   function handleClick2() {
     things = things.slice(1);
   }
-  let current = "　";
+  let current = "　<br>　<br>　";
 </script>
 
 <style>
@@ -36,7 +36,7 @@
 
 <h1>Hey {name}!</h1>
 
-<div class="detail">{current.element ? current.label + "　" + current.element.name : current }</div>
+<div class="detail">{@html current.element ? current.label + "<br>" + current.element.name : current }</div>
 
 <p>
   {#each things as thing (thing.id)}

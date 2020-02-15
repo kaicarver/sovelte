@@ -10,15 +10,15 @@
 	function enter() {
 		hovering = true;
 		let zhspace = "　"; // space character in Chinese, same width as a character
-		//zhspace = "*"
-		let label = char === simp ? char + zhspace + zhspace: char + zhspace + simp;
+		if (char === simp) simp = zhspace;
+		let label = char + "<br>" + simp;
 		// just a hack until I find a cleaner way to do this
-		value = { element: element, label: label };
+		value = { label: label, element: element };
 	}
 
 	function leave() {
 		hovering = false;
-		value = '　';
+		value = "　<br>　<br>　";
 	}
 </script>
 
