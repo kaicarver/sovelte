@@ -9,7 +9,11 @@
 
 	function enter() {
 		hovering = true;
-		value = char === simp ? char : char + ' ' + simp;
+		let zhspace = "　"; // space character in Chinese, same width as a character
+		//zhspace = "*"
+		let label = char === simp ? char + zhspace + zhspace: char + zhspace + simp;
+		// just a hack until I find a cleaner way to do this
+		value = { element: element, label: label };
 	}
 
 	function leave() {

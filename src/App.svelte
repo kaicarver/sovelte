@@ -29,11 +29,14 @@
   h1 {
     color: green;
   }
+  .detail {
+    font-size: 2em;
+  }
 </style>
 
 <h1>Hey {name}!</h1>
 
-<button on:click={handleClick2}>Remove first thing</button>
+<div class="detail">{current.element ? current.label + "　" + current.element.name : current }</div>
 
 <p>
   {#each things as thing (thing.id)}
@@ -41,7 +44,7 @@
   {/each}
 </p>
 
-<h1>{current}</h1>
+<button on:click={handleClick2}>Remove first thing</button>
 
 <p>This rocks.</p>
 
