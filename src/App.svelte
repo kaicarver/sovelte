@@ -1,9 +1,9 @@
 <script>
   import Thing from "./Thing.svelte";
+  import Credits from "./Credits.svelte";
 
   export let name;
 
-  // try to import JSON as-is...
   import * as obj from "./test.json";
   console.log("obj:", obj);
 
@@ -19,9 +19,6 @@
     t.id = i + 1;
   });
 
-  function handleClick2() {
-    things = things.slice(1);
-  }
   let current = "　<br>　<br>　";
 </script>
 
@@ -44,24 +41,6 @@
   {/each}
 </p>
 
-<button on:click={handleClick2}>Remove first thing</button>
-
 <p>This rocks.</p>
 
-<a href="https://github.com/kaicarver/sovelte">Source on Github</a>
-/
-<a
-  href="https://zh.wikipedia.org/wiki/%E5%85%83%E7%B4%A0%E5%91%A8%E6%9C%9F%E8%A1%A8#%E5%85%83%E7%B4%A0%E9%80%B1%E6%9C%9F%E8%A1%A8">
-  Periodic Table in Chinese on Wikipedia
-</a>
-/
-<a
-  href="https://github.com/Bowserinator/Periodic-Table-JSON#periodic-table-json">
-  Periodic Table JSON by Bowserinator
-</a>
-/
-<a
-  href="https://github.com/nieldlr/hanzi">
-  HanziJS Chinese character module by Niel de la Rouviere (not used yet)
-</a>
-
+<Credits/>
