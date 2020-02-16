@@ -27,9 +27,6 @@
   h1 {
     color: green;
   }
-  .detail {
-    font-size: 2em;
-  }
 </style>
 
 <h1>Hey {name}!</h1>
