@@ -1,5 +1,6 @@
 <script>
   import Thing from "./Thing.svelte";
+  import Detail from "./Detail.svelte";
   import Credits from "./Credits.svelte";
 
   export let name;
@@ -19,7 +20,7 @@
     t.id = i + 1;
   });
 
-  let current = "　<br>　<br>　";
+  let current;
 </script>
 
 <style>
@@ -33,7 +34,7 @@
 
 <h1>Hey {name}!</h1>
 
-<div class="detail">{@html current.element ? current.label + "<br>" + current.element.name : current }</div>
+<Detail yuansu={current}/>
 
 <p>
   {#each things as thing (thing.id)}

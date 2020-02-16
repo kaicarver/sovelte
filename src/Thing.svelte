@@ -18,7 +18,7 @@
 
 	function leave() {
 		hovering = false;
-		value = "　<br>　<br>　";
+		value = undefined;
 	}
 </script>
 
