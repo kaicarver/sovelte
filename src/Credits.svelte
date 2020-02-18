@@ -1,6 +1,7 @@
 <script>
 </script>
 
+<div>
 <a href="https://github.com/kaicarver/sovelte">Source on Github</a>
 /
 <a
@@ -17,6 +18,8 @@
   href="https://github.com/nieldlr/hanzi">
   HanziJS Chinese character module by Niel de la Rouviere (not used yet)
 </a>
+</div>
 
 <style>
+div { font-size: 1vw; }
 </style>

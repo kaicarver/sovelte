@@ -25,6 +25,7 @@
 
 <style>
   h1 {
+    font-size: 2vw;
     color: green;
   }
 </style>
@@ -38,7 +39,5 @@
     <Thing bind:value={current} {...thing} element={elements[thing.id - 1]}/>
   {/each}
 </p>
-
-<p>This rocks.</p>
 
 <Credits/>
