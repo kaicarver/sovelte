@@ -18,6 +18,11 @@
   href="https://github.com/nieldlr/hanzi">
   HanziJS Chinese character module by Niel de la Rouviere (not used yet)
 </a>
+/
+<a
+  href="https://www.youtube.com/watch?v=zGM-wSKFBpo">
+  Obligatory Tom Lehrer
+</a>
 </div>
 
 <style>

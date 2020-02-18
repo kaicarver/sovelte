@@ -28,6 +28,7 @@
     font-size: 2vw;
     color: green;
   }
+  p { text-align: center; }
 </style>
 
 <h1>Hey {name}!</h1>

@@ -15,8 +15,10 @@
 	}
 </script>
 
-<span on:click={enter}>
-	<span style="background-color: {color}">{id}<br>{char}<br>{element.symbol}</span>
+<span style="background-color: {color}" on:click={enter}>
+	<div class="number">{id}</div>
+	<div class="char">{char}</div>
+	<div class="symbol">{element.symbol}</div>
 </span>
 
 <style>
@@ -24,9 +26,14 @@
 		display: inline-block;
 		padding: 0.2vw 0.1vw;
 		margin: 0;
-		width: 3vw;
+		width: 5vw;
 		text-align: center;
 		color: white;
-		font-size: 1.5vw;
+		font-size: 2vw;
 	}
+	.number { font-size: 50%; }
+	.symbol { font-size: 50%; }
+
+
+
 </style>
