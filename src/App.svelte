@@ -24,6 +24,11 @@
 </script>
 
 <style>
+  :global(body) {
+		/* this will apply to <body> */
+		margin: 0;
+    padding: 50px;
+	}
   h1 {
     font-size: 2vw;
     color: green;
@@ -31,7 +36,7 @@
   p { text-align: center; }
 </style>
 
-<h1>Hey {name}!</h1>
+<h1>Heyy {name}!</h1>
 
 <Detail yuansu={current}/>
 
