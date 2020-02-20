@@ -3,6 +3,11 @@
   import Detail from "./Detail.svelte";
   import Credits from "./Credits.svelte";
 
+  import { foo } from "hanzi";
+
+  //let hanzi = require("hanzi");
+  console.log(foo.getPinyin('的'));
+
   export let name;
 
   import * as obj from "./test.json";
