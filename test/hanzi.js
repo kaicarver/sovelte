@@ -8,7 +8,7 @@
 console.log("Testing Hanzi module basic functionality\n");
 
 //Require
-var hanzi = require("hanzi");
+let hanzi = require("hanzi");
 //Initiate
 hanzi.start();
 

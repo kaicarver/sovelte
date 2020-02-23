@@ -3,10 +3,10 @@
   import Detail from "./Detail.svelte";
   import Credits from "./Credits.svelte";
 
-  import { foo } from "hanzi";
-
+  // can't figure out how to import this
+  //import hanzi from "hanzi";
   //let hanzi = require("hanzi");
-  console.log(foo.getPinyin('的'));
+  //console.log(hanzi.getPinyin('的'));
 
   export let name;
 
