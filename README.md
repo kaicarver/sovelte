@@ -1,3 +1,7 @@
+This is an attempt at a small periodic table in Chines app.
+
+The idea is that the elements in Chinese aren't that hard to learn and understand.
+
 *Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
 
 ---
