@@ -7,7 +7,7 @@
 	export let element;
 
 	function enter() {
-		let zhspace = "　"; // space character in Chinese, same width as a character
+		const zhspace = "　"; // space character in Chinese, same width as a character
 		if (char === simp) simp = zhspace;
 		let label = char + "<br>" + simp;
 		// just a hack until I find a cleaner way to do this
